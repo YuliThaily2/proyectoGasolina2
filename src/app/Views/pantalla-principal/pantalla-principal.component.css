@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    width: 50%; /* Ancho del contenido */
+    margin-right: 20px; /* Margen derecho para separar la imagen */
+  }
+  
+  .image {
+    width: 70%; /* Ancho de la imagen */
+  }
+  
+  .image img {
+    margin-top: 20px; /* Margen superior para separar la imagen */
+    width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+  }
+  
+  
+  .title {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espacio inferior para separar el título del formulario */
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Margen inferior para cada grupo de formulario */
+  }
+  
+  label {
+    margin-bottom: 5px; /* Margen inferior para las etiquetas */
+  }
+  

@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="content">
+    <!-- Formulario -->
+    <form>
+      <div class="title">
+        <label>Predicción del aumento de la gasolina</label>
+      </div>
+      <div class="form-group">
+        <label>Año:</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option *ngFor="let fecha of arrFecha" [value]="fecha">{{ fecha }}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Estado: </label>
+        <select class="form-control" id="exampleFormControlSelect2">
+          <option *ngFor="let estado of estadosMexico" [value]="estado">{{estado}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Tipo de Gasolina: </label>
+        <select class="form-control" id="exampleFormControlSelect2">
+          <option *ngFor="let gasolina of arrGasolina" [value]="gasolina">{{gasolina}}</option>
+        </select>
+      </div>
+    </form>
+  </div>
+  <!-- Imagen -->
+  <div class="image">
+    <img src="assets/images/gasolina.jpg" alt="Descripción de la imagen">
+  </div>
+</div>
