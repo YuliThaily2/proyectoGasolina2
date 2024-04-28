@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pantalla-principal',
@@ -7,6 +8,24 @@ import { Component } from '@angular/core';
 })
 
 export class PantallaPrincipalComponent {
+  selectedYear: string;
+  selectedState: string;
+  selectedGasolina: string;
+
+  constructor(private router: Router){
+    this.selectedYear= '10';
+    this.selectedState = 'As';
+    this.selectedGasolina = 'Ma';
+
+  }
+
+  ngOnInit() {
+    // Asignar la primera opción por defecto
+    this.selectedYear = this.arrFecha[0];
+    this.selectedState = this.estadosMexico[0];
+    this.selectedGasolina = this.arrGasolina[0];
+  }
+
   arrFecha = [
     '2024',
     '2023',
@@ -58,5 +77,13 @@ export class PantallaPrincipalComponent {
     'Yucatán',
     'Zacatecas'
   ];
+
+  onSubmit() {
+    this.router.navigate(['/PantallaPrediccion', { year: this.selectedYear, state: this.selectedState, gasolina: this.selectedGasolina }]);
+    console.log(this.selectedYear)
+    console.log(this.selectedState)
+    console.log(this.selectedGasolina)
+
+  }
   
 }
