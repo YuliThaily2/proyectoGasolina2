@@ -11,11 +11,13 @@
   
   .image {
     width: 70%; /* Ancho de la imagen */
+    
   }
   
   .image img {
     margin-top: 20px; /* Margen superior para separar la imagen */
     width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+    border-radius: 30px;
   }
   
   
@@ -30,5 +32,26 @@
   
   label {
     margin-bottom: 5px; /* Margen inferior para las etiquetas */
+    font-family: 'Montserrat', sans-serif;
   }
+
+  button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: '500';
+    font-size: 1em;
+    color: #fff;
+    background-color: #5D9C59;
+    border: none;
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 8%;
+  }
+
+  select {
+    font-family: 'Montserrat', sans-serif;
+  }
+
   

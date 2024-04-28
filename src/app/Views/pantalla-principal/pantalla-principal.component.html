@@ -1,9 +1,11 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <div class="container">
   <div class="content">
     <!-- Formulario -->
     <form>
       <div class="title">
-        <label>Predicción del aumento de la gasolina</label>
+        <label style="font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 1.3em; color: #9B4444; text-transform: uppercase;">Predicción del aumento de la gasolina</label>
+        <label>Por favor, complete los siguientes campos para obtener su predicción personalizada</label>
       </div>
       <div class="form-group">
         <label>Año:</label>
@@ -23,6 +25,7 @@
           <option *ngFor="let gasolina of arrGasolina" [value]="gasolina">{{gasolina}}</option>
         </select>
       </div>
+      <button>Predecir</button>
     </form>
   </div>
   <!-- Imagen -->
