@@ -1,6 +1,18 @@
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
 <div>
-    <h1>Valores recibidos:</h1>
-    <p>Año: {{ year }}</p>
-    <p>Estado: {{ state }}</p>
-    <p>Tipo de Gasolina: {{ gasolina }}</p>
+  <h1>Resultados de la predicción</h1>
+  <div class="contenedor">
+    <p class="horizontal"><strong>Predicción para el Año:</strong> {{ year }}</p>
+    <p class="horizontal"><strong>Estado:</strong> {{ state }}</p>
+    <p class="horizontal"><strong>Tipo de Gasolina:</strong> {{ gasolina }}</p>
   </div>
+  <label>Selecciona un grafica para observar la tendencia del aumento de la gasolina</label>
+  <div class="buttonContainer">
+    <button>Gráfica Regresión Lineal</button>
+    <button>Gráfica Regresión Polinomial</button>
+  </div>
+ 
+</div>

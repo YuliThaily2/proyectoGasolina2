@@ -33,6 +33,7 @@
   label {
     margin-bottom: 5px; /* Margen inferior para las etiquetas */
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
   }
 
   button {
