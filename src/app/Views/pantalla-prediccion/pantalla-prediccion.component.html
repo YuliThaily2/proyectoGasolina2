@@ -6,6 +6,7 @@
   <h1>Resultados de la predicción</h1>
   <div class="contenedor">
     <p class="horizontal"><strong>Predicción para el Año:</strong> {{ year }}</p>
+    <p class="horizontal"><strong>Mes:</strong> {{ month }}</p>
     <p class="horizontal"><strong>Estado:</strong> {{ state }}</p>
     <p class="horizontal"><strong>Tipo de Gasolina:</strong> {{ gasolina }}</p>
   </div>
@@ -15,4 +16,8 @@
     <button>Gráfica Regresión Polinomial</button>
   </div>
  
+  <button (click)="getPrediction()">Obtener Predicción</button>
+  <div *ngIf="prediccion !== null">
+    <h2>Predicción: {{ prediccion }}</h2>
+  </div>
 </div>

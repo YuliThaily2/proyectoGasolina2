@@ -14,6 +14,12 @@
         </select>
       </div>
       <div class="form-group">
+        <label>Mes:</label>
+        <select class="form-control" id="selectedMes" [(ngModel)]="selectedMes" name="selectedMes">
+          <option *ngFor="let mes of meses" [value]="mes">{{ mes }}</option>
+        </select>        
+      </div>      
+      <div class="form-group">
         <label for="stateSelect">Estado: </label>
         <select class="form-control" id="stateSelect" [(ngModel)]="selectedState" name="selectedState">
           <option *ngFor="let estado of estadosMexico" [value]="estado">{{estado}}</option>
