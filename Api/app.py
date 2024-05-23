@@ -3,12 +3,14 @@ import os
 import pandas as pd
 from flask import Flask, request, jsonify
 import joblib
+from flask_cors import CORS  
 
 app = Flask(__name__)
+CORS(app)
 
 # Obtener la ruta completa al directorio del proyecto
 base_dir = os.path.abspath(os.path.dirname(__file__))
-modelo_path = os.path.join(base_dir, '..', 'src', 'assets', 'models', 'modelo_entrenado.pkl')
+modelo_path = os.path.join(base_dir,'..', 'src', 'assets', 'models', 'modelo_entrenado.pkl')
 
 print("Ruta del modelo:", modelo_path)  # Agregamos esta línea para imprimir la ruta
 

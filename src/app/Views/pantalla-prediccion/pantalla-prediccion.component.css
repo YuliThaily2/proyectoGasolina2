@@ -22,20 +22,6 @@ h1 {
     text-align: center;
 }
 
-button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 1em;
-    color: #fff;
-    background-color: #5d9c59;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: inline-block;
-    margin-right: 10px;
-    
-  }
 
   label {
     font-family: "Montserrat", sans-serif;
@@ -45,3 +31,43 @@ button {
     text-align: center;
     margin-top: 20px;
   }
+
+  .image {
+    width: 70%; /* Ancho de la imagen */
+    
+  }
+  
+  .image img {
+    margin-top: 20px; /* Margen superior para separar la imagen */
+    width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+    border-radius: 30px;
+    margin-left: 250px;
+  }
+
+  .buttonContainer {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    display: block;
+    margin: 0 auto; /* Esto centra el botón horizontalmente */
+    padding: 10px 20px;
+    /* font-size: 16px; */
+    background-color: #5d9c59; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttonContainer:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el ratón */
+  }
+  
+  h2 {
+    text-align: center; /* Centra el texto */
+    font-size: 24px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    margin-top: 20px; /* Espacio superior */
+  }
+  

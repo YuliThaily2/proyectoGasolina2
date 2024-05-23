@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PantallaPrincipalComponent } from './Views/pantalla-principal/pantalla-principal.component';
 import { BienvenidaComponent } from './Views/bienvenida/bienvenida.component';
 import { PantallaPrediccionComponent } from './Views/pantalla-prediccion/pantalla-prediccion.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {path: 'Bienvenida', component:BienvenidaComponent},
@@ -14,7 +15,7 @@ const routes: Routes = [
 
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), HttpClientModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

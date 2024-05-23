@@ -6,13 +6,24 @@
   <h1>Resultados de la predicción</h1>
   <div class="contenedor">
     <p class="horizontal"><strong>Predicción para el Año:</strong> {{ year }}</p>
+    <p class="horizontal"><strong>Mes:</strong> {{ month }}</p>
     <p class="horizontal"><strong>Estado:</strong> {{ state }}</p>
     <p class="horizontal"><strong>Tipo de Gasolina:</strong> {{ gasolina }}</p>
   </div>
-  <label>Selecciona un grafica para observar la tendencia del aumento de la gasolina</label>
-  <div class="buttonContainer">
+  <label>Click en el boton para obtener la prediccion del precio!</label>
+  <!-- <div class="buttonContainer">
     <button>Gráfica Regresión Lineal</button>
     <button>Gráfica Regresión Polinomial</button>
-  </div>
+  </div> -->
  
+  <button class="buttonContainer" (click)="getPrediction()">Obtener Predicción</button>
+  <div *ngIf="prediccion !== null">
+    <h2>Predicción: $ {{ prediccion }}</h2>
+  </div>
+
+
+   <!-- Imagen -->
+   <div class="image">
+    <img src="assets/images/gasolina.jpg" alt="Descripción de la imagen">
+  </div>
 </div>
